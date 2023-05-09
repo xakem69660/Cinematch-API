@@ -129,8 +129,11 @@ def MainView(request, userid):
         # Flatten the Recommended list of lists into a single list
         flattened_list = [item for sublist in zip(*Recommended) for item in sublist]
 
+        #Remove repeated movies
+        data = list(set(flattened_list))
+
         # Prepare the response data with the flattened list of recommended movies
-        response_data = {'list_data': flattened_list}
+        response_data = {'list_data': data}
         return JsonResponse(response_data)
 
     # If the document does not exist for the given user ID, return an HTTP response
