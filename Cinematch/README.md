@@ -22,3 +22,12 @@
 
 <br>
 https://stackoverflow.com/questions/75001305/how-to-connect-expo-go-app-to-django-rest-framework-backend-on-localhost
+<br>
+
+DEBUG = True
+
+CORS_ORIGIN_ALLOW_ALL = True
+ALLOWED_HOSTS = ['*']
+
+
+'rest_framework',
