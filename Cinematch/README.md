@@ -18,3 +18,7 @@
 - nltk.download('punkt')
 - nltk.download('stopwords')
 - nltk.download('wordnet')
+
+
+<br>
+https://stackoverflow.com/questions/75001305/how-to-connect-expo-go-app-to-django-rest-framework-backend-on-localhost
